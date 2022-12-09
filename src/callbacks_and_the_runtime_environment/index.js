@@ -4,5 +4,5 @@ import update from "./update.js"
 
 const bootstrap = () => {
   const root = document.getElementById("root")
-  root.appendChild(elements.app)
+  root.appendChild(app)
 }

@@ -7,11 +7,11 @@ export default class Timer {
     return this.#milliseconds
   }
 
-  get error() {
+  delay() {
     return Date.now() - (this.#milliseconds + this.#startTime)
   }
 
-  get timeDisplay() {
+  timeDisplay() {
     const seconds = Math.floor(this.#milliseconds / 1000)
       .toString()
       .padStart(2, "0")
