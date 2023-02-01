@@ -3,7 +3,7 @@ import askAda from "./askAda.js"
 
 const chanceOfError = 0.1
 
-export const dummyFetch1 = (question) => {
+export const dummyFetchWithPseudoPromise = (question) => {
   const pseudoPromise = new PseudoPromise()
   const delay = Math.random() * 3000
 
@@ -18,7 +18,7 @@ export const dummyFetch1 = (question) => {
   return pseudoPromise
 }
 
-export const dummyFetch2 = (question) =>
+export const dummyFetchWithRealPromise = (question) =>
   new Promise(async (resolve, reject) => {
     const delay = Math.random() * 3000
 
