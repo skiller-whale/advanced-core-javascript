@@ -14,5 +14,6 @@ module.exports = {
   devServer: {
     compress: false,
     port: 3500,
+    allowedHosts: "all",  // Default is localhost, but this is needed for hosted environments
   }
 }
